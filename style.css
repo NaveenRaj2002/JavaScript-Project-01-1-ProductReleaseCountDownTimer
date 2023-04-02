@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    border: 2px solid rgb(178, 125, 180);
+    padding: 20px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.box h2{
+    font-size: 20px;
+}
+.box small{
+    font-size: 10px;
+}
+
+i{
+    color: white;
+    font-size: 30px;
+}
+
+p{
+    font-size: 13px;
+    font-weight: 400;
+    width: 340px;
+}
+
+h1{
+    font-weight: 800;
+}
+
+#email{
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 25px;
+    border: 3px solid rgb(178, 125, 180);
+    background: transparent;
+    color: white;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+input::placeholder {
+    color: white;
+}
+input::-webkit-input-placeholder {
+    color: white;
+}
+input:-ms-input-placeholder {
+    color: white;
+}
+
+#btn{
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 35, 108);
+    background-color: rgb(255, 35, 108);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        font-size: 20px;
+    }
+
+    .counter{
+        padding: 20px 80px;
+        gap: 50px;
+    }
+
+    .box h2{
+        font-size: 30px;
+    }
+    .box small{
+        font-size: 15px;
+    }
+
+    p{
+        width: auto;
+    }
+}
